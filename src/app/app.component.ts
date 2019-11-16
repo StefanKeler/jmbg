@@ -9,16 +9,16 @@ export class AppComponent {
   title = 'maticni broj - Stefan Keler';
 
   public pokraine = [
-    "Stranci bez državljanstva bivše SFRJ ili njenih naslednica:",
-    "Bosna i Hercegovina:",
-    "Crna Gora:",
-    "Hrvatska:",
-    "Makedonija:",
-    "Slovenija:",
+    "Stranci bez državljanstva bivše SFRJ ili njenih naslednica",
+    "Bosna i Hercegovina",
+    "Crna Gora",
+    "Hrvatska",
+    "Makedonija",
+    "Slovenija",
     "",
-    "Centralna Srbija:",
-    "Autonomna Pokrajina Vojvodina:",
-    "Autonomna Pokrajina Kosovo i Metohija:"
+    "Centralna Srbija",
+    "Autonomna Pokrajina Vojvodina",
+    "Autonomna Pokrajina Kosovo i Metohija"
   ]
 
   public regioni = [
@@ -187,14 +187,14 @@ export class AppComponent {
         var d = new Date(godina+"-" + mm + "-" +dd);
 
         if(d.getDay()){
-          this.poruka = "Datum rodjenje: " + dd + "." + mm + "." + godina + ".";
-          this.pokraina = this.pokraine[Math.floor(parseInt(rr)/10)];
+          this.poruka = "Datum rodjenja: " + dd + "." + mm + "." + godina + ".";
+          this.pokraina = "Pokraina: " + this.pokraine[Math.floor(parseInt(rr)/10)];
           if(this.regioni[parseInt(rr)]){
             this.region = "Region: " + this.regioni[parseInt(rr)];
             if(bbb >499){
-              this.pol = "Pol: zenski, rodjena: " + (parseInt(bbb) - 499) + ".";
+              this.pol = "Pol: zenski, rodjena: " + (parseInt(bbb) - 499) + ". u dantu zenskog pola";
             }else{
-              this.pol = "Pol: muski, rodjen: " + (parseInt(bbb) + 1) + ".";  
+              this.pol = "Pol: muski, rodjen: " + (parseInt(bbb) + 1) + ". u danu muskog pola";  
             } 
             this.valid = true;
           }

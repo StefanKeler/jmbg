@@ -1,6 +1,6 @@
 <router-outlet></router-outlet>
 <mat-toolbar color="primary">
-  <span class="title-center">Maticni broj gradjana - Stefan Keler I7 9/2019</span>
+  <span class="title-center">JMBG Aplikacija - Stefan Keler I7 9/2019</span>
 </mat-toolbar>
 
 <div class="center margin-top">
@@ -19,8 +19,8 @@
   </mat-form-field>
 </div>
 <div class="center margin">
-  <button mat-raised-button color="primary" (click)="check()" [disabled]="!ime || !prezime || !mbr">
-    Check
+  <button class="dugmic" mat-raised-button color="primary" (click)="check()" [disabled]="!ime || !prezime || !mbr">
+    Ispisi podatke
   </button>
 </div>
 <div *ngIf="valid" class="center">
